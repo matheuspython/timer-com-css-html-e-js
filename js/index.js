@@ -23,12 +23,18 @@ function iniciaRelogio() {
 
 
 iniciar.addEventListener('click', function(event) {
+    relogio.classList.remove("pausado")
+    clearInterval(timer)
     iniciaRelogio()
 })
 pausar.addEventListener('click', function(event) {
+    relogio.classList.add('pausado')
     clearInterval(timer)
 })
 zerar.addEventListener('click', function(event) {
+    relogio.classList.remove("pausado")
+
     clearInterval(timer)
+    segundos = 0
     relogio.innerHTML = '00:00:00'
 })
