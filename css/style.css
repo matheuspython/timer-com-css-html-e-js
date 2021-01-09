@@ -1,0 +1,34 @@
+    .container {
+        max-width: 640px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .timer {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timer .time {
+        display: inline-block;
+    }
+    
+    .botoes button {
+        cursor: pointer;
+        border-radius: 12px;
+        font-size: 13px;
+        color: white;
+        background-color: rgb(57, 135, 224);
+        border: 0;
+        padding: 10px 15px;
+        transition: .4s;
+    }
+    
+    .botoes button:hover {
+        font-size: .9rem;
+        background-color: blue;
+    }
